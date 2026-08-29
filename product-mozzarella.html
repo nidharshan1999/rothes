@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm Fresh Mozzarella Cheese — Rothes (a) Dairy Farm</title>
+  <meta name="description" content="Handcrafted daily at Rothes Dairy Farm with 100% pure fresh cow milk. Authentic stretchy, creamy, melt-in-your-mouth artisanal mozzarella cheese." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;color:#1a1a2e;background:#fff;overflow-x:hidden;line-height:1.6;}
+    img{display:block;max-width:100%;height:auto;}a{text-decoration:none;color:inherit;}ul{list-style:none;}
+    :root{--navy:#0F3557;--navy-dark:#0a2540;--yellow:#eac356;--yellow-dark:#d9a410;--light-bg:#FDF8F0;--white:#FFFFFF;--mid-gray:#6b7280;--light-border:#e8e0d0;--radius-pill:999px;--radius-card:16px;--shadow-card:0 8px 32px rgba(15,53,87,0.1);--shadow-hover:0 20px 48px rgba(15,53,87,0.18);--transition:0.3s cubic-bezier(0.4,0,0.2,1);}
+    @keyframes floatY{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+    ::-webkit-scrollbar{width:10px;}::-webkit-scrollbar-track{background:#0a2540;}::-webkit-scrollbar-thumb{background:#eac356;border-radius:5px;}
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
+    .section-pad{padding:96px 0;}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:16px;}
+    .eyebrow::before{content:'';display:inline-block;width:24px;height:2px;background:var(--yellow);border-radius:2px;}
+    .section-heading{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.18;color:var(--navy);}.section-heading.light{color:#fff;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;border-radius:var(--radius-pill);font-family:'Inter',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;border:none;transition:transform var(--transition),box-shadow var(--transition),background var(--transition),color var(--transition);position:relative;overflow:hidden;white-space:nowrap;}
+    .btn:hover{transform:translateY(-3px) scale(1.02);}
+    .btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 6px 20px rgba(234,195,86,.35);}.btn-yellow:hover{background:#f2cb5e;box-shadow:0 10px 30px rgba(234,195,86,.5);}
+    .btn-yellow::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transition:left .5s ease;}.btn-yellow:hover::after{left:100%;}
+    .btn-navy{background:var(--navy);color:#fff;box-shadow:0 6px 20px rgba(15,53,87,.25);}.btn-navy:hover{background:#0a2540;}
+    .btn-outline-yellow{background:transparent;color:var(--yellow);border:2px solid var(--yellow);}.btn-outline-yellow:hover{background:var(--yellow);color:var(--navy);}
+    .btn-outline-white{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5);}.btn-outline-white:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+    .btn-sm{padding:10px 22px;font-size:.8rem;}
+    .reveal{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease;}.reveal.visible{opacity:1;transform:none;}
+    .reveal-left{opacity:0;transform:translateX(-50px);transition:opacity .7s ease,transform .7s ease;}.reveal-left.visible{opacity:1;transform:none;}
+    .reveal-right{opacity:0;transform:translateX(50px);transition:opacity .7s ease,transform .7s ease;}.reveal-right.visible{opacity:1;transform:none;}
+    .float-anim{animation:floatY 3.5s ease-in-out infinite;}
+    .announcement-bar{background:var(--navy-dark);padding:10px 24px;display:flex;align-items:center;justify-content:center;gap:16px;position:relative;}
+    .announcement-bar p{font-size:.82rem;color:rgba(255,255,255,.88);font-weight:500;text-align:center;}
+    .ann-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(234,195,86,.2);border:1px solid rgba(234,195,86,.4);padding:2px 10px;border-radius:999px;font-weight:700;color:var(--yellow);font-size:.75rem;margin-right:8px;}
+    .ann-cta{position:absolute;right:24px;top:50%;transform:translateY(-50%);}
+    @media(max-width:768px){.announcement-bar{flex-direction:column;gap:8px;padding:10px 16px;}.ann-cta{position:static;transform:none;}}
+    #navbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(15,53,87,.08);transition:background .3s,box-shadow .3s,border-color .3s;}
+    #navbar.scrolled{background:rgba(255,255,255,.97);box-shadow:0 12px 36px rgba(15,53,87,.12);border-color:rgba(234,195,86,.25);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 28px;max-width:1280px;margin:0 auto;gap:24px;}
+    .nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}.nav-logo img.brand-logo{height:85px;max-height:85px;width:auto;max-width:260px;object-fit:contain;transition:transform .3s ease;filter:drop-shadow(0 4px 12px rgba(15,53,87,.18));}.nav-logo img.brand-logo:hover{transform:scale(1.04);}
+    .nav-links{display:flex;align-items:center;gap:8px;list-style:none;}
+    .nav-links li a{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:999px;font-size:.875rem;font-weight:600;color:var(--navy);transition:all .25s ease;white-space:nowrap;}
+    .nav-links li a:hover{background:rgba(15,53,87,.07);}.nav-links li a.active{background:var(--navy);color:#fff;}
+    .nav-links .has-dropdown{position:relative;}.nav-links .has-dropdown>a::after{content:'▾';font-size:.75rem;margin-left:2px;transition:transform .25s;}.nav-links .has-dropdown:hover>a::after{transform:rotate(180deg);}
+    .nav-links .dropdown{position:absolute;top:calc(100% + 12px);left:0;background:rgba(255,255,255,.98);backdrop-filter:blur(16px);border:1px solid rgba(15,53,87,.1);border-radius:16px;padding:10px 0;min-width:220px;box-shadow:0 20px 40px rgba(15,53,87,.14);opacity:0;pointer-events:none;transform:translateY(12px) scale(.96);transition:opacity .3s,transform .3s;z-index:100;}
+    .nav-links .has-dropdown:hover .dropdown{opacity:1;pointer-events:auto;transform:translateY(0) scale(1);}
+    .nav-links .dropdown a{display:block;padding:10px 24px;font-size:.85rem;font-weight:600;color:var(--navy);transition:background .2s,padding-left .2s;}.nav-links .dropdown a:hover{background:rgba(234,195,86,.15);padding-left:28px;}
+    .nav-phone-chip{display:inline-flex;align-items:center;gap:10px;padding:8px 20px;background:var(--navy);color:#fff !important;border-radius:999px;font-weight:700;font-size:.85rem;box-shadow:0 4px 16px rgba(15,53,87,.25);transition:transform .3s,box-shadow .3s,background .3s;text-decoration:none;flex-shrink:0;}
+    .nav-phone-chip:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 8px 24px rgba(234,195,86,.4);background:#0a2540;}
+    .nav-phone-chip .pci{width:28px;height:28px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;flex-shrink:0;}.nav-phone-chip .pci svg{width:14px;height:14px;fill:var(--navy);}
+    .hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px;}.hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:var(--transition);}
+    .mobile-menu{display:none;background:#fff;border-top:1px solid var(--light-border);padding:16px 24px;}.mobile-menu a{display:block;padding:10px 0;font-size:.9rem;font-weight:600;color:var(--navy);border-bottom:1px solid var(--light-border);}.mobile-menu a:last-child{border-bottom:none;}
+    @media(max-width:960px){.nav-links{display:none;}.hamburger{display:flex;}}@media(max-width:600px){.nav-logo img.brand-logo{height:60px;max-width:200px;}}
+    footer#footer{background:var(--navy-dark);color:#fff;padding-top:80px;}
+    .footer-main{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:60px;}
+    .footer-tagline{font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.6;margin-bottom:24px;}.social-icons{display:flex;gap:12px;}
+    .social-icon{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background var(--transition),border-color var(--transition);}.social-icon:hover{background:var(--yellow);border-color:var(--yellow);}.social-icon:hover svg{stroke:var(--navy);}.social-icon svg{width:16px;height:16px;stroke:rgba(255,255,255,.6);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+    .footer-col h4{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:20px;text-transform:uppercase;letter-spacing:.08em;}.footer-col ul{display:flex;flex-direction:column;gap:10px;}.footer-col ul li a{font-size:.84rem;color:rgba(255,255,255,.55);transition:color var(--transition);}.footer-col ul li a:hover{color:var(--yellow);}
+    .fci{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}.fci-icon{width:30px;height:30px;border-radius:50%;background:rgba(234,195,86,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}.fci-icon svg{width:13px;height:13px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round;}.fci p{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.5;}
+    .footer-bar{border-top:1px solid rgba(255,255,255,.08);padding:20px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}.footer-bar p{font-size:.8rem;color:rgba(255,255,255,.4);}.footer-bar-links{display:flex;gap:24px;}.footer-bar-links a{font-size:.8rem;color:rgba(255,255,255,.4);transition:color var(--transition);}.footer-bar-links a:hover{color:var(--yellow);}
+    @media(max-width:1024px){.footer-main{grid-template-columns:1fr 1fr;}}@media(max-width:600px){.footer-main{grid-template-columns:1fr;}}
+  
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: #0F2C59;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.mobile-menu {
+  display: none;
+  background: #ffffff;
+  border-top: 1px solid #eef2f6;
+  padding: 16px 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.mobile-menu:not([hidden]) {
+  display: block !important;
+}
+.mobile-menu a {
+  display: block;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0F2C59;
+  border-bottom: 1px solid #f0f4f8;
+  text-decoration: none;
+}
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+@media (max-width: 992px) {
+  .simple-nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+
+
+/* ─── COMPREHENSIVE MOBILE & DESKTOP RESPONSIVE SYSTEM ─── */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+img, svg, video, iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .simple-nav-container {
+    padding: 0 16px;
+  }
+  .simple-brand-logo {
+    height: 70px !important;
+    max-height: 70px !important;
+  }
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 16px;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+  .hero-cta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-img-wrap {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 360px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .simple-brand-logo {
+    height: 58px !important;
+    max-height: 58px !important;
+  }
+  .simple-phone-pill span {
+    font-size: 0.82rem;
+  }
+  .simple-phone-pill {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  .simple-phone-icon-bg {
+    width: 26px;
+    height: 26px;
+  }
+  .simple-phone-icon-bg svg {
+    width: 13px;
+    height: 13px;
+  }
+  .hero-heading {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+  }
+  .hero-para {
+    font-size: 0.95rem !important;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-cta {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .mfooter-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .mfooter-bottom-inner {
+    flex-direction: column !important;
+    gap: 12px !important;
+    text-align: center !important;
+  }
+}
+
+
+/* ─── BULLETPROOF MOBILE MENU CSS OVERRIDE ─── */
+.mobile-menu {
+  background: #ffffff !important;
+}
+.mobile-menu.active,
+.mobile-menu:not([hidden]),
+#mobile-menu.active,
+#mobile-menu:not([hidden]) {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 99999 !important;
+  background: #ffffff !important;
+  width: 100% !important;
+  padding: 16px 24px !important;
+  border-top: 1px solid #eef2f6 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+}
+.mobile-menu.active a,
+.mobile-menu:not([hidden]) a,
+#mobile-menu.active a,
+#mobile-menu:not([hidden]) a {
+  display: block !important;
+  padding: 14px 0 !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: #0F2C59 !important;
+  border-bottom: 1px solid #f0f4f8 !important;
+  text-decoration: none !important;
+}
+.mobile-menu.active a:last-child,
+.mobile-menu:not([hidden]) a:last-child {
+  border-bottom: none !important;
+}
+
+
+.pdetail-img-wrap {
+  position: relative !important;
+  top: auto !important;
+}
+
+</style>
+
+  <style>
+    .pdetail-hero{background:var(--light-bg);padding:48px 0 72px;border-bottom:1px solid var(--light-border);}
+    .breadcrumb{display:inline-flex;align-items:center;gap:10px;font-size:.85rem;color:var(--mid-gray);margin-bottom:28px;}
+    .breadcrumb a{color:var(--navy);font-weight:600;}.breadcrumb .sep{color:var(--mid-gray);}
+
+    .pdetail-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+    .pdetail-img-wrap{position:relative;}
+    .pdetail-main-img{width:100%;height:480px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-hover);border:4px solid #fff;}
+    .pdetail-main-img img{width:100%;height:100%;object-fit:cover;}
+    .pdetail-badge{position:absolute;top:20px;left:20px;background:var(--yellow);color:var(--navy);font-size:.75rem;font-weight:800;padding:6px 16px;border-radius:999px;text-transform:uppercase;}
+
+    .pdetail-cat{font-size:.78rem;font-weight:700;color:var(--yellow-dark);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;}
+    .pdetail-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,2.8rem);color:var(--navy);line-height:1.2;margin-bottom:10px;}
+    .pdetail-tagline{font-size:1.05rem;font-weight:600;color:var(--mid-gray);margin-bottom:20px;}
+    .pdetail-price-box{display:flex;align-items:center;gap:16px;background:#fff;padding:16px 24px;border-radius:16px;border:1px solid var(--light-border);margin-bottom:28px;}
+    .pdetail-price{font-size:1.4rem;font-weight:900;color:var(--navy);}
+    .pdetail-stock{font-size:.8rem;font-weight:700;color:#059669;background:#d1fae5;padding:4px 12px;border-radius:999px;}
+
+    .pdetail-section-title{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--yellow);display:inline-block;}
+    .pdetail-desc{font-size:.95rem;color:var(--mid-gray);line-height:1.8;margin-bottom:32px;}
+
+    .benefits-list{display:flex;flex-direction:column;gap:12px;margin-bottom:36px;}
+    .benefit-item{display:flex;align-items:center;gap:12px;font-size:.92rem;font-weight:600;color:var(--navy);}
+    .benefit-icon{width:26px;height:26px;border-radius:50%;background:var(--yellow);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;}
+
+    .specs-table{background:#fff;border-radius:16px;border:1px solid var(--light-border);overflow:hidden;margin-bottom:36px;}
+    .spec-row{display:flex;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--light-border);}
+    .spec-row:last-child{border-bottom:none;}
+    .spec-row:nth-child(even){background:var(--light-bg);}
+    .spec-label{font-size:.85rem;font-weight:700;color:var(--navy);}
+    .spec-value{font-size:.85rem;color:var(--mid-gray);font-weight:500;}
+
+    .cta-box{background:var(--navy);color:#fff;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:16px;}
+    .cta-box h3{font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;}
+    .cta-box p{font-size:.88rem;color:rgba(255,255,255,.75);}
+    .cta-actions{display:flex;gap:12px;flex-wrap:wrap;}
+
+    .related-section{padding:96px 0;background:#fff;}
+    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;}
+    .related-card{background:var(--light-bg);border-radius:20px;overflow:hidden;border:1px solid var(--light-border);transition:transform .3s;}
+    .related-card:hover{transform:translateY(-6px);}
+    .related-img{height:180px;overflow:hidden;}
+    .related-img img{width:100%;height:100%;object-fit:cover;}
+    .related-body{padding:20px;}
+    .related-body h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);margin-bottom:4px;}
+    .related-body p{font-size:.8rem;color:var(--mid-gray);}
+
+    @media(max-width:900px){
+      .pdetail-grid{grid-template-columns:1fr;gap:40px;}
+      .pdetail-main-img{height:320px;}
+      .related-grid{grid-template-columns:1fr;}
+    }
+  </style>
+<style>
+/* ==========================================================================
+   MODERN FOOTER SYSTEM
+   ========================================================================== */
+.modern-footer {
+  background: linear-gradient(180deg, #0A1B30 0%, #050E1A 100%) !important;
+  color: #ffffff !important;
+  padding: 60px 0 30px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-top: 1px solid rgba(234, 195, 86, 0.25) !important;
+}
+.modern-footer::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(234, 195, 86, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer-cta-banner {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+  padding: 36px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 56px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+.fcb-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #EAC356;
+  background: rgba(234, 195, 86, 0.12);
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(234, 195, 86, 0.3);
+}
+.fcb-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.65rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.fcb-content p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  max-width: 620px;
+  margin: 0;
+}
+.fcb-action { flex-shrink: 0; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1.8fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-logo-card {
+  display: inline-block;
+  background: #ffffff;
+  padding: 12px 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  margin-bottom: 20px;
+}
+.footer-logo-card img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.footer-tagline {
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  margin-bottom: 24px !important;
+  max-width: 380px !important;
+}
+
+.social-pills {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.social-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #ffffff !important;
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-pill-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: #EAC356;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.3s ease;
+}
+.social-pill-btn:hover {
+  background: #EAC356;
+  color: #0A1B30 !important;
+  border-color: #EAC356;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(234, 195, 86, 0.3);
+}
+.social-pill-btn:hover svg {
+  stroke: #0A1B30;
+}
+
+.footer-col-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.18rem;
+  color: #ffffff;
+  margin-bottom: 22px;
+  position: relative;
+  display: inline-block;
+}
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background: #EAC356;
+  border-radius: 2px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-links-list a {
+  color: rgba(255,255,255,0.72) !important;
+  text-decoration: none;
+  font-size: 0.93rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-links-list a:hover {
+  color: #EAC356 !important;
+  transform: translateX(4px);
+}
+
+.modern-contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mcc-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 12px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.mcc-item:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(234, 195, 86, 0.4);
+  transform: translateX(4px);
+}
+.mcc-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(234, 195, 86, 0.12);
+  border: 1px solid rgba(234, 195, 86, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mcc-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #EAC356;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mcc-info {
+  display: flex;
+  flex-direction: column;
+}
+.mcc-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(255,255,255,0.5);
+}
+.mcc-info strong {
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-bottom-bar p {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.86rem;
+  margin: 0;
+}
+.footer-meta {
+  color: rgba(234, 195, 86, 0.85);
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .footer-cta-banner { flex-direction: column; text-align: center; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+</style>
+<style>
+/* ==========================================================================
+   MODERN HEADER & UTILITY BAR SYSTEM
+   ========================================================================== */
+.top-utility-bar {
+  background: #050E1A !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 0.78rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 6px 0 !important;
+  position: relative !important;
+  z-index: 1001 !important;
+}
+.tub-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+}
+.tub-left, .tub-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+.tub-sep {
+  color: rgba(234, 195, 86, 0.5) !important;
+}
+.tub-socials {
+  display: flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+}
+.tub-socials a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.25s ease !important;
+}
+.tub-socials a svg {
+  width: 12px !important;
+  height: 12px !important;
+  stroke: #EAC356 !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+}
+.tub-socials a:hover {
+  background: #EAC356 !important;
+}
+.tub-socials a:hover svg {
+  stroke: #0A1B30 !important;
+}
+
+.modern-navbar {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  background: rgba(10, 27, 48, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(234, 195, 86, 0.25) !important;
+  padding: 10px 0 !important;
+  transition: all 0.35s ease !important;
+}
+.modern-navbar.scrolled {
+  background: rgba(5, 14, 26, 0.98) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  padding: 6px 0 !important;
+}
+.modern-navbar .nav-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+}
+
+.nav-logo-box {
+  background: #ffffff !important;
+  padding: 6px 16px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  transition: transform 0.25s ease !important;
+}
+.nav-logo-box:hover {
+  transform: scale(1.03) !important;
+}
+.nav-logo-box img {
+  height: 48px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.modern-navbar .nav-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.modern-navbar .nav-item-link {
+  color: rgba(255, 255, 255, 0.88) !important;
+  text-decoration: none !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  padding: 8px 18px !important;
+  border-radius: 50px !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid transparent !important;
+}
+.modern-navbar .nav-item-link:hover {
+  color: #EAC356 !important;
+  background: rgba(234, 195, 86, 0.12) !important;
+  border-color: rgba(234, 195, 86, 0.3) !important;
+}
+.modern-navbar .nav-item-link.active {
+  color: #EAC356 !important;
+  background: rgba(234, 195, 86, 0.18) !important;
+  border-color: rgba(234, 195, 86, 0.45) !important;
+  box-shadow: 0 4px 14px rgba(234, 195, 86, 0.2) !important;
+}
+
+.nav-right-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+.modern-navbar .nav-phone-chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+  padding: 6px 16px 6px 8px !important;
+  border-radius: 50px !important;
+  text-decoration: none !important;
+  font-size: 0.86rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+.modern-navbar .nav-phone-chip:hover {
+  border-color: #EAC356 !important;
+  background: rgba(234, 195, 86, 0.12) !important;
+  color: #EAC356 !important;
+}
+.phone-pulse-icon {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  background: #EAC356 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: pulse-ring 2s infinite !important;
+}
+.phone-pulse-icon svg {
+  width: 14px !important;
+  height: 14px !important;
+  stroke: #0A1B30 !important;
+  fill: none !important;
+  stroke-width: 2.2 !important;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(234, 195, 86, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(234, 195, 86, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(234, 195, 86, 0); }
+}
+
+@media (max-width: 992px) {
+  .top-utility-bar { display: none !important; }
+  .modern-navbar .nav-links { display: none !important; }
+  .nav-cta-btn { display: none !important; }
+}
+</style>
+<style>
+/* ==========================================================================
+   SIMPLE HEADER NAVBAR (MATCHING SCREENSHOT)
+   ========================================================================== */
+.simple-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #ffffff !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #eef2f6;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.simple-nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simple-nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.simple-brand-logo {
+  height: 95px;
+  max-height: 95px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.simple-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.simple-nav-links li a {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0F2C59;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.simple-nav-links li a:hover,
+.simple-nav-links li a.active {
+  color: #0F2C59;
+}
+
+.simple-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.simple-phone-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0F2C59;
+  color: #ffffff !important;
+  padding: 7px 20px 7px 7px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  box-shadow: 0 4px 15px rgba(15, 44, 89, 0.25);
+  transition: all 0.3s ease;
+}
+
+.simple-phone-pill:hover {
+  background: #0A1B30;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(15, 44, 89, 0.35);
+}
+
+.simple-phone-icon-bg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #EAC356;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.simple-phone-icon-bg svg {
+  width: 16px;
+  height: 16px;
+  fill: #0F2C59;
+}
+
+@media (max-width: 992px) {
+  .simple-nav-links { display: none !important; }
+}
+</style>
+</head>
+<body>
+  
+  <!-- NAVBAR -->
+    
+  </div>
+
+  <!-- MODERN NAVBAR -->
+    <!-- SIMPLE HEADER NAVBAR -->
+  <nav id="navbar" class="simple-navbar" role="navigation" aria-label="Main navigation">
+    <div class="simple-nav-container">
+      <a href="index.html" class="simple-nav-logo">
+        <img src="logo.png" alt="Rothes A Dairy Farm" class="simple-brand-logo" />
+      </a>
+
+      <ul class="simple-nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="index.html#whatwedo">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="simple-nav-right">
+        <a href="tel:051-2222440" class="simple-phone-pill">
+          <div class="simple-phone-icon-bg">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.28 11.8 19.79 19.79 0 01.22 3.17 2 2 0 012.22 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91A16 16 0 0015.1 17.9l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <span>051-2222440</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#whatwedo">Services</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <section class="pdetail-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span class="sep">/</span>
+        <a href="products.html">Products</a> <span class="sep">/</span>
+        <span>Farm Fresh Mozzarella Cheese</span>
+      </div>
+
+      <div class="pdetail-grid">
+        <div class="pdetail-img-wrap">
+          <div class="pdetail-main-img" style="position:relative;">
+            <img src="mozzarella.jpg" alt="Farm Fresh Mozzarella Cheese" />
+            <span class="pdetail-badge">Artisanal Fresh</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="pdetail-cat">Dairy Products</span>
+          <h1 class="pdetail-title">Farm Fresh Mozzarella Cheese</h1>
+          <p class="pdetail-tagline">Handcrafted Artisanal Mozzarella Cheese</p>
+
+          <div class="pdetail-price-box">
+            
+            <span class="pdetail-stock">✓ Available Daily</span>
+          </div>
+
+          <h3 class="pdetail-section-title">Product Overview</h3>
+          <div class="pdetail-desc">Our Fresh Mozzarella Cheese is handcrafted daily by skilled cheesemakers right on our farm using morning-milked 100% fresh cow milk. Designed to deliver supreme meltability, elastic stretch, and a rich, creamy flavor profile, Rothes Mozzarella is the favorite choice for pizzeria chefs, restaurants, and gourmet home cooks.
+
+We adhere strictly to natural curdling and stretch processes without artificial stabilizers or synthetic emulsifiers.</div>
+
+          <h3 class="pdetail-section-title">Key Highlights &amp; Benefits</h3>
+          <div class="benefits-list">
+            
+    <div class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <span>Unbeatable stretch and golden melt capability</span>
+    </div>
+  
+    <div class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <span>Made from same-day fresh cow milk</span>
+    </div>
+  
+    <div class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <span>Rich source of calcium and protein</span>
+    </div>
+  
+    <div class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <span>Free from artificial fillers or starch additives</span>
+    </div>
+  
+    <div class="benefit-item">
+      <div class="benefit-icon">✓</div>
+      <span>Delivered cold directly to your kitchen</span>
+    </div>
+  
+          </div>
+
+          <h3 class="pdetail-section-title">Technical Specifications</h3>
+          <div class="specs-table">
+            
+    <div class="spec-row">
+      <span class="spec-label">Milk Source</span>
+      <span class="spec-value">100% Fresh Cow Milk (Rothes Herd)</span>
+    </div>
+  
+    <div class="spec-row">
+      <span class="spec-label">Form</span>
+      <span class="spec-value">Block / Shredded Balls</span>
+    </div>
+  
+    <div class="spec-row">
+      <span class="spec-label">Packaging</span>
+      <span class="spec-value">Vacuum Sealed Pack </span>
+    </div>
+  
+    <div class="spec-row">
+      <span class="spec-label">Moisture</span>
+      <span class="spec-value">High Moisture Fresh Cheese</span>
+    </div>
+  
+    <div class="spec-row">
+      <span class="spec-label">Refrigeration</span>
+      <span class="spec-value">Keep Chilled (2°C - 4°C)</span>
+    </div>
+  
+    <div class="spec-row">
+      <span class="spec-label">Best For</span>
+      <span class="spec-value">Pizza, Pasta, Caprese Salad, Lasagna</span>
+    </div>
+  
+          </div>
+
+          <div class="cta-box">
+            <h3>How to Order Farm Fresh Mozzarella Cheese?</h3>
+            <p>Call our farm direct helpline or message us on WhatsApp for doorstep delivery, subscription setup, or bulk pricing.</p>
+            <div class="cta-actions">
+              <a href="tel:051-2222440" class="btn btn-yellow">Call 051-2222440</a>
+              <a href="contact.html" class="btn btn-outline-white">Inquire Online →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-section">
+    <div class="container">
+      <span class="eyebrow">Explore More</span>
+      <h2 class="section-heading">Other Farm Fresh Products</h2>
+      <div class="related-grid">
+        
+    <div class="related-card">
+      <div class="related-img">
+        <img src="ghee.jpg" alt="Rothes Pure Cow Ghee" />
+      </div>
+      <div class="related-body">
+        <h4>Rothes Pure Cow Ghee</h4>
+        <p>100% Pure Premium Desi Ghee (Elagi Thel)</p>
+        <a href="product-cow-ghee.html" class="btn btn-yellow btn-sm" style="margin-top:12px;">View Product →</a>
+      </div>
+    </div>
+  
+    <div class="related-card">
+      <div class="related-img">
+        <img src="fresh-milk.jpg" alt="Organic Fresh Cow Milk (4.5% FAT)" />
+      </div>
+      <div class="related-body">
+        <h4>Organic Fresh Cow Milk (4.5% FAT)</h4>
+        <p>Farm Fresh Whole Milk · 3,000L Daily Output</p>
+        <a href="product-fresh-milk.html" class="btn btn-yellow btn-sm" style="margin-top:12px;">View Product →</a>
+      </div>
+    </div>
+  
+    <div class="related-card">
+      <div class="related-img">
+        <img src="paneer.jpg" alt="Fresh Artisanal Paneer (Cottage Cheese)" />
+      </div>
+      <div class="related-body">
+        <h4>Fresh Artisanal Paneer (Cottage Cheese)</h4>
+        <p>Natural Lime-Curded Soft Cottage Cheese</p>
+        <a href="product-paneer.html" class="btn btn-yellow btn-sm" style="margin-top:12px;">View Product →</a>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- FOOTER -->
+    <!-- MODERN FOOTER -->
+  <footer id="footer" class="modern-footer">
+    <div class="container">
+      
+
+      <!-- Main Footer Columns Grid -->
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-card">
+            <img src="logo.png" alt="Rothes A Dairy Farm Logo" />
+          </div>
+          <p class="footer-tagline">Delivering nature's finest milk from our family farm to your table — fresh, pure, and full of goodness. Trusted by families since 2003.</p>
+          <div class="social-pills">
+            <a href="https://web.facebook.com/RothesAdairyFarm?_rdc=1&_rdr#" target="_blank" rel="noopener" class="social-pill-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/rothesadairy" target="_blank" rel="noopener" class="social-pill-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="about.html"><span>About Us</span></a></li>
+            <li><a href="products.html"><span>Our Products</span></a></li>
+            <li><a href="index.html#whatwedo"><span>Services</span></a></li>
+            <li><a href="contact.html"><span>Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Column -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Get in Touch</h4>
+          <div class="modern-contact-cards">
+            <a href="tel:051-2222440" class="mcc-item">
+              <div class="mcc-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.28 11.8 19.79 19.79 0 01.22 3.17 2 2 0 012.22 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91A16 16 0 0015.1 17.9l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="mcc-info">
+                <span class="mcc-label">Call Us</span>
+                <strong>051-2222440</strong>
+              </div>
+            </a>
+
+            <a href="mailto:itzmeindujan@gmail.com" class="mcc-item">
+              <div class="mcc-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="mcc-info">
+                <span class="mcc-label">Email Us</span>
+                <strong>itzmeindujan@gmail.com</strong>
+              </div>
+            </a>
+
+            <div class="mcc-item">
+              <div class="mcc-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="mcc-info">
+                <span class="mcc-label">Location</span>
+                <strong>Rothes (A) Estate, Hatton, Sri Lanka</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <p>© 2026 Rothes (A) Dairy Farm. All rights reserved.</p>
+        <div class="footer-meta">
+          <span>Crafted with Pure Passion in Hatton</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    /* ─── UNIFIED MOBILE MENU & NAVBAR HANDLER ───────────── */
+    (function() {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 40) navbar.classList.add('scrolled');
+          else navbar.classList.remove('scrolled');
+        }, { passive: true });
+      }
+
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isOpen = mobileMenu.classList.contains('active') || mobileMenu.style.display === 'block';
+          if (isOpen) {
+            mobileMenu.classList.remove('active');
+            mobileMenu.style.setProperty('display', 'none', 'important');
+            mobileMenu.hidden = true;
+            hamburger.setAttribute('aria-expanded', 'false');
+          } else {
+            mobileMenu.classList.add('active');
+            mobileMenu.style.setProperty('display', 'block', 'important');
+            mobileMenu.hidden = false;
+            hamburger.setAttribute('aria-expanded', 'true');
+          }
+          const spans = hamburger.querySelectorAll('span');
+          if (spans.length >= 3) {
+            if (!isOpen) {
+              spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+              spans[1].style.opacity = '0';
+              spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+            } else {
+              spans[0].style.transform = '';
+              spans[1].style.opacity = '';
+              spans[2].style.transform = '';
+            }
+          }
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(function(a) {
+          a.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            mobileMenu.style.setProperty('display', 'none', 'important');
+            mobileMenu.hidden = true;
+            hamburger.setAttribute('aria-expanded', 'false');
+            const spans = hamburger.querySelectorAll('span');
+            if (spans.length >= 3) {
+              spans[0].style.transform = '';
+              spans[1].style.opacity = '';
+              spans[2].style.transform = '';
+            }
+          });
+        });
+      }
+    })();
+
+
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  
+</script>
+</body>
+</html>

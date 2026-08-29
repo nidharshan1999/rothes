@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Rothes (a) Dairy Farm | Our Story &amp; People</title>
+  <meta name="description" content="Discover the story behind Rothes (a) Dairy Farm — a family-run dairy farm since 2003. Learn about our mission, values, team, and commitment to ethical, organic dairy farming." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; font-size:16px; }
+    body { font-family:'Inter',sans-serif; color:#1a1a2e; background:#fff; overflow-x:hidden; line-height:1.6; }
+    img  { display:block; max-width:100%; height:auto; }
+    a    { text-decoration:none; color:inherit; }
+    ul   { list-style:none; }
+
+    :root {
+      --navy:        #0F3557;
+      --navy-dark:   #0a2540;
+      --yellow:      #eac356;
+      --yellow-dark: #d9a410;
+      --light-bg:    #FDF8F0;
+      --white:       #FFFFFF;
+      --charcoal:    #1a1a2e;
+      --mid-gray:    #6b7280;
+      --light-border:#e8e0d0;
+      --radius-pill: 999px;
+      --radius-card: 16px;
+      --shadow-card: 0 8px 32px rgba(15,53,87,0.1);
+      --shadow-hover:0 20px 48px rgba(15,53,87,0.18);
+      --transition:  0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    ::-webkit-scrollbar { width:10px; }
+    ::-webkit-scrollbar-track { background:#0a2540; }
+    ::-webkit-scrollbar-thumb { background:#eac356; border-radius:5px; }
+
+    .container { width:100%; max-width:1200px; margin:0 auto; padding:0 24px; }
+    .section-pad { padding:96px 0; }
+
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:8px;
+      font-size:0.75rem; font-weight:700; letter-spacing:0.14em;
+      text-transform:uppercase; color:var(--yellow); margin-bottom:16px;
+    }
+    .eyebrow::before {
+      content:''; display:inline-block; width:24px; height:2px;
+      background:var(--yellow); border-radius:2px;
+    }
+
+    .section-heading {
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2rem,4vw,3rem); font-weight:800;
+      line-height:1.18; color:var(--navy);
+    }
+    .section-heading.light { color:var(--white); }
+
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding:14px 32px; border-radius:var(--radius-pill);
+      font-family:'Inter',sans-serif; font-size:0.9rem; font-weight:700;
+      cursor:pointer; border:none;
+      transition:transform var(--transition),box-shadow var(--transition),background var(--transition),color var(--transition);
+      position:relative; overflow:hidden; white-space:nowrap;
+    }
+    .btn:hover { transform:translateY(-3px) scale(1.02); }
+    .btn-yellow { background:var(--yellow); color:var(--navy); box-shadow:0 6px 20px rgba(234,195,86,.35); }
+    .btn-yellow:hover { background:#f2cb5e; box-shadow:0 10px 30px rgba(234,195,86,.5); }
+    .btn-navy { background:var(--navy); color:#fff; box-shadow:0 6px 20px rgba(15,53,87,.25); }
+    .btn-navy:hover { background:#0a2540; }
+    .btn-outline-yellow { background:transparent; color:var(--yellow); border:2px solid var(--yellow); }
+    .btn-outline-yellow:hover { background:var(--yellow); color:var(--navy); }
+    .btn-outline-white { background:transparent; color:#fff; border:2px solid rgba(255,255,255,.5); }
+    .btn-outline-white:hover { background:rgba(255,255,255,.12); border-color:#fff; }
+    .btn-sm { padding:10px 22px; font-size:0.8rem; }
+
+    .reveal { opacity:0; transform:translateY(36px); transition:opacity .7s ease,transform .7s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .reveal-left  { opacity:0; transform:translateX(-50px); transition:opacity .7s ease,transform .7s ease; }
+    .reveal-left.visible  { opacity:1; transform:none; }
+    .reveal-right { opacity:0; transform:translateX(50px);  transition:opacity .7s ease,transform .7s ease; }
+    .reveal-right.visible { opacity:1; transform:none; }
+
+    @keyframes floatY { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+    .float-anim { animation:floatY 3.5s ease-in-out infinite; }
+
+    .ic {
+      width:52px; height:52px; border-radius:50%; background:var(--yellow);
+      display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    }
+    .ic svg { width:22px; height:22px; stroke:var(--navy); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .ic.sm { width:40px; height:40px; }
+    .ic.sm svg { width:18px; height:18px; }
+
+    .seal {
+      width:90px; height:90px; border-radius:50%; background:var(--yellow);
+      border:3px dashed var(--navy);
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      text-align:center; font-family:'Inter',sans-serif;
+      font-size:.6rem; font-weight:700; letter-spacing:.08em;
+      color:var(--navy); line-height:1.3; text-transform:uppercase;
+    }
+    .seal.lg { width:120px; height:120px; font-size:.7rem; }
+
+    .announcement-bar {
+      background:var(--navy-dark); padding:10px 24px;
+      display:flex; align-items:center; justify-content:center; gap:16px; position:relative;
+    }
+    .announcement-bar p { font-size:.82rem; color:rgba(255,255,255,.88); font-weight:500; text-align:center; }
+    .ann-badge {
+      display:inline-flex; align-items:center; gap:6px;
+      background:rgba(234,195,86,.2); border:1px solid rgba(234,195,86,.4);
+      padding:2px 10px; border-radius:999px; font-weight:700; color:var(--yellow);
+      font-size:.75rem; margin-right:8px;
+    }
+    .ann-cta { position:absolute; right:24px; top:50%; transform:translateY(-50%); }
+    @media(max-width:768px) {
+      .announcement-bar { flex-direction:column; gap:8px; padding:10px 16px; }
+      .ann-cta { position:static; transform:none; }
+    }
+
+    #navbar {
+      position:sticky; top:0; z-index:1000;
+      background:rgba(255,255,255,.92); backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(15,53,87,.08);
+      transition:background .3s,box-shadow .3s,border-color .3s;
+    }
+    #navbar.scrolled {
+      background:rgba(255,255,255,.97);
+      box-shadow:0 12px 36px rgba(15,53,87,.12);
+      border-color:rgba(234,195,86,.25);
+    }
+    .nav-inner {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 28px; max-width:1280px; margin:0 auto; gap:24px;
+    }
+    .nav-logo { display:flex; align-items:center; gap:10px; flex-shrink:0; }
+    .nav-logo img.brand-logo {
+      height:85px; max-height:85px; width:auto; max-width:260px; object-fit:contain;
+      transition:transform .3s ease;
+      filter:drop-shadow(0 4px 12px rgba(15,53,87,.18));
+    }
+    .nav-logo img.brand-logo:hover { transform:scale(1.04); }
+
+    .nav-links { display:flex; align-items:center; gap:8px; list-style:none; }
+    .nav-links li a {
+      display:inline-flex; align-items:center; gap:6px;
+      padding:9px 18px; border-radius:999px;
+      font-size:.875rem; font-weight:600; color:var(--navy);
+      transition:all .25s ease; white-space:nowrap;
+    }
+    .nav-links li a:hover { background:rgba(15,53,87,.07); }
+    .nav-links li a.active { background:var(--navy); color:#fff; }
+    .nav-links .has-dropdown { position:relative; }
+    .nav-links .has-dropdown > a::after { content:'▾'; font-size:.75rem; margin-left:2px; transition:transform .25s; }
+    .nav-links .has-dropdown:hover > a::after { transform:rotate(180deg); }
+    .nav-links .dropdown {
+      position:absolute; top:calc(100% + 12px); left:0;
+      background:rgba(255,255,255,.98); backdrop-filter:blur(16px);
+      border:1px solid rgba(15,53,87,.1); border-radius:16px;
+      padding:10px 0; min-width:220px;
+      box-shadow:0 20px 40px rgba(15,53,87,.14);
+      opacity:0; pointer-events:none;
+      transform:translateY(12px) scale(.96);
+      transition:opacity .3s,transform .3s; z-index:100;
+    }
+    .nav-links .has-dropdown:hover .dropdown { opacity:1; pointer-events:auto; transform:translateY(0) scale(1); }
+    .nav-links .dropdown a {
+      display:block; padding:10px 24px; font-size:.85rem; font-weight:600; color:var(--navy);
+      transition:background .2s,padding-left .2s;
+    }
+    .nav-links .dropdown a:hover { background:rgba(234,195,86,.15); padding-left:28px; }
+
+    .nav-phone-chip {
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 20px; background:var(--navy); color:#fff !important;
+      border-radius:999px; font-weight:700; font-size:.85rem;
+      box-shadow:0 4px 16px rgba(15,53,87,.25);
+      transition:transform .3s,box-shadow .3s,background .3s;
+      text-decoration:none; flex-shrink:0;
+    }
+    .nav-phone-chip:hover { transform:translateY(-2px) scale(1.03); box-shadow:0 8px 24px rgba(234,195,86,.4); background:#0a2540; }
+    .nav-phone-chip .pci { width:28px; height:28px; border-radius:50%; background:var(--yellow); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .nav-phone-chip .pci svg { width:14px; height:14px; fill:var(--navy); }
+
+    .hamburger { display:none; background:none; border:none; cursor:pointer; flex-direction:column; gap:5px; padding:4px; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--navy); border-radius:2px; transition:var(--transition); }
+    .mobile-menu { display:none; background:#fff; border-top:1px solid var(--light-border); padding:16px 24px; }
+    .mobile-menu a { display:block; padding:10px 0; font-size:.9rem; font-weight:600; color:var(--navy); border-bottom:1px solid var(--light-border); }
+    .mobile-menu a:last-child { border-bottom:none; }
+
+    @media(max-width:960px) { .nav-links{display:none;} .hamburger{display:flex;} }
+    @media(max-width:600px) { .nav-logo img.brand-logo{height:60px; max-width:200px;} }
+
+    .about-hero {
+      background:linear-gradient(135deg,#0a2540 0%,#0F3557 55%,#15456f 100%);
+      padding:0; overflow:hidden; position:relative; min-height:88vh;
+      display:flex; align-items:center;
+    }
+    .hero-inner-about {
+      display:grid; grid-template-columns:1fr 1fr; gap:64px;
+      align-items:center; padding:80px 24px; max-width:1200px; margin:0 auto; width:100%;
+      position:relative; z-index:1;
+    }
+    .breadcrumb {
+      display:inline-flex; align-items:center; gap:10px;
+      font-size:.85rem; color:rgba(255,255,255,.7); margin-bottom:20px; font-weight:500;
+    }
+    .breadcrumb a { color:var(--yellow); }
+    .breadcrumb .sep { color:rgba(255,255,255,.4); }
+    .about-hero h1 {
+      font-family:'Playfair Display',serif; font-size:clamp(2.4rem,5vw,3.8rem);
+      font-weight:900; color:#fff; line-height:1.12; margin-bottom:20px;
+    }
+    .about-hero h1 span { color:var(--yellow); }
+    .about-hero p.lead {
+      font-size:1.05rem; color:rgba(255,255,255,.8); line-height:1.75;
+      margin-bottom:36px; max-width:560px;
+    }
+    .hero-chips { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:36px; }
+    .hero-chip {
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 18px; background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.2); border-radius:999px;
+      font-size:.84rem; font-weight:600; color:#fff;
+    }
+    .hero-chip svg { width:15px; height:15px; stroke:var(--yellow); fill:none; stroke-width:2; }
+
+    .hero-collage { position:relative; height:520px; }
+    .hc-main {
+      position:absolute; top:0; left:0; width:72%; height:80%;
+      border-radius:24px; overflow:hidden;
+      box-shadow:0 24px 60px rgba(0,0,0,.4); border:3px solid rgba(255,255,255,.12);
+    }
+    .hc-main img { width:100%; height:100%; object-fit:cover; }
+    .hc-secondary {
+      position:absolute; bottom:0; right:0; width:52%; height:54%;
+      border-radius:20px; overflow:hidden;
+      border:4px solid #fff; box-shadow:0 16px 40px rgba(0,0,0,.3);
+    }
+    .hc-secondary img { width:100%; height:100%; object-fit:cover; }
+    .hc-badge {
+      position:absolute; top:40%; left:55%; transform:translate(-50%,-50%);
+      z-index:2; animation:floatY 3.5s ease-in-out infinite;
+    }
+    .hc-years-badge {
+      width:110px; height:110px; border-radius:50%; background:var(--yellow);
+      border:3px dashed var(--navy);
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      font-weight:900; color:var(--navy); text-align:center;
+      box-shadow:0 8px 24px rgba(234,195,86,.5);
+    }
+    .hc-years-badge .num { font-size:2.2rem; line-height:1; font-family:'Playfair Display',serif; }
+    .hc-years-badge .label { font-size:.5rem; text-transform:uppercase; letter-spacing:.12em; }
+
+    @media(max-width:900px) {
+      .hero-inner-about { grid-template-columns:1fr; gap:40px; }
+      .hero-collage { height:340px; }
+      .about-hero { min-height:auto; }
+    }
+
+    .cert-band { background:var(--yellow); padding:20px 0; }
+    .cert-inner { display:flex; align-items:center; justify-content:center; gap:40px; flex-wrap:wrap; }
+    .cert-item { display:flex; align-items:center; gap:10px; }
+    .cert-item svg { width:22px; height:22px; stroke:var(--navy); fill:none; stroke-width:2; }
+    .cert-item span { font-size:.8rem; font-weight:700; color:var(--navy); letter-spacing:.05em; text-transform:uppercase; }
+
+    .stats-strip { background:var(--navy); }
+    .stats-row { display:grid; grid-template-columns:repeat(4,1fr); }
+    .stat-item {
+      padding:36px 24px; text-align:center;
+      border-right:1px solid rgba(255,255,255,.1);
+      transition:background .3s;
+    }
+    .stat-item:last-child { border-right:none; }
+    .stat-item:hover { background:rgba(255,255,255,.05); }
+    .stat-num-big {
+      font-family:'Playfair Display',serif; font-size:clamp(2.5rem,5vw,3.4rem);
+      font-weight:900; color:var(--yellow); line-height:1; display:block;
+      transition:transform .3s cubic-bezier(.34,1.56,.64,1);
+    }
+    .stat-item:hover .stat-num-big { transform:scale(1.1); }
+    .stat-label { font-size:.82rem; font-weight:700; color:rgba(255,255,255,.65); margin-top:6px; letter-spacing:.04em; text-transform:uppercase; }
+
+    @media(max-width:768px) { .stats-row { grid-template-columns:repeat(2,1fr); } .stat-item { border-bottom:1px solid rgba(255,255,255,.1); } }
+
+    .story-section { background:var(--light-bg); }
+    .story-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .story-images { position:relative; height:520px; }
+    .si-main {
+      position:absolute; top:0; left:0; width:76%; height:82%;
+      border-radius:24px; overflow:hidden; box-shadow:var(--shadow-card);
+    }
+    .si-main img { width:100%; height:100%; object-fit:cover; }
+    .si-secondary {
+      position:absolute; bottom:0; right:0; width:52%; height:52%;
+      border-radius:20px; overflow:hidden; border:4px solid #fff; box-shadow:var(--shadow-card);
+    }
+    .si-secondary img { width:100%; height:100%; object-fit:cover; }
+    .si-seal { position:absolute; top:44%; left:51%; transform:translate(-50%,-50%); z-index:2; }
+
+    .story-content { padding-left:16px; }
+    .intro-quote {
+      font-family:'Playfair Display',serif; font-style:italic;
+      font-size:1.25rem; color:var(--navy); line-height:1.65;
+      padding-left:20px; border-left:4px solid var(--yellow); margin-bottom:28px;
+    }
+    .story-content p { color:var(--mid-gray); line-height:1.8; margin-bottom:20px; font-size:.96rem; }
+    .story-features { display:flex; flex-direction:column; gap:16px; margin:28px 0 36px; }
+    .sf-item { display:flex; align-items:flex-start; gap:16px; }
+    .sf-item strong { display:block; font-size:.92rem; font-weight:700; color:var(--navy); }
+    .sf-item span { font-size:.82rem; color:var(--mid-gray); }
+    @media(max-width:900px) { .story-grid { grid-template-columns:1fr; } .story-images { height:360px; } .story-content { padding-left:0; } }
+
+    .mvv-section { background:var(--navy); }
+    .mvv-header { text-align:center; max-width:700px; margin:0 auto 56px; }
+    .mvv-header p { color:rgba(255,255,255,.7); margin-top:12px; line-height:1.75; }
+    .mvv-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+    .mvv-card {
+      background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12);
+      border-radius:24px; padding:36px 28px;
+      transition:background .35s,border-color .35s,transform .35s cubic-bezier(.34,1.56,.64,1);
+    }
+    .mvv-card:hover { background:rgba(255,255,255,.1); border-color:rgba(234,195,86,.4); transform:translateY(-10px); }
+    .mvv-icon {
+      width:60px; height:60px; border-radius:18px;
+      background:rgba(234,195,86,.15); border:1px solid rgba(234,195,86,.3);
+      display:flex; align-items:center; justify-content:center; margin-bottom:24px;
+    }
+    .mvv-icon svg { width:26px; height:26px; stroke:var(--yellow); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .mvv-card h3 { font-family:'Playfair Display',serif; font-size:1.5rem; color:#fff; margin-bottom:14px; }
+    .mvv-card p { font-size:.9rem; color:rgba(255,255,255,.72); line-height:1.7; }
+    .mvv-tag {
+      display:inline-block; margin-top:20px; padding:4px 14px;
+      background:rgba(234,195,86,.15); border:1px solid rgba(234,195,86,.3);
+      border-radius:999px; font-size:.72rem; font-weight:700;
+      color:var(--yellow); letter-spacing:.07em; text-transform:uppercase;
+    }
+    @media(max-width:900px) { .mvv-grid { grid-template-columns:1fr; } }
+
+    .timeline-section { background:#fff; }
+    .timeline-header { text-align:center; max-width:680px; margin:0 auto 64px; }
+    .timeline-header p { color:var(--mid-gray); margin-top:12px; line-height:1.75; }
+    .timeline { position:relative; max-width:900px; margin:0 auto; }
+    .timeline::before {
+      content:''; position:absolute; left:50%; top:0; bottom:0;
+      width:3px; background:linear-gradient(to bottom,var(--yellow),rgba(234,195,86,.1));
+      transform:translateX(-50%);
+    }
+    .tl-item { position:relative; width:50%; padding:0 48px 56px; }
+    .tl-item:nth-child(odd)  { left:0; text-align:right; }
+    .tl-item:nth-child(even) { left:50%; text-align:left; }
+    .tl-dot {
+      position:absolute; top:4px;
+      width:20px; height:20px; border-radius:50%;
+      background:var(--yellow); border:3px solid #fff;
+      box-shadow:0 0 0 4px rgba(234,195,86,.35);
+    }
+    .tl-item:nth-child(odd)  .tl-dot { right:-10px; }
+    .tl-item:nth-child(even) .tl-dot { left:-10px; }
+    .tl-year { font-family:'Playfair Display',serif; font-size:1.6rem; font-weight:900; color:var(--yellow); display:block; margin-bottom:6px; }
+    .tl-item h4 { font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:6px; }
+    .tl-item p { font-size:.85rem; color:var(--mid-gray); line-height:1.6; }
+    @media(max-width:700px) {
+      .timeline::before { left:16px; }
+      .tl-item { width:100%; left:0 !important; text-align:left !important; padding:0 24px 44px 52px; }
+      .tl-item .tl-dot { left:6px !important; right:auto !important; }
+    }
+
+    .team-section { background:var(--light-bg); }
+    .team-intro { text-align:center; max-width:640px; margin:0 auto 56px; }
+    .team-intro p { color:var(--mid-gray); margin-top:12px; font-size:.96rem; }
+    .team-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; }
+    .team-card {
+      background:#fff; border-radius:24px; overflow:hidden;
+      box-shadow:var(--shadow-card); border:1px solid rgba(15,53,87,.07);
+      transition:transform .35s,box-shadow .35s;
+    }
+    .team-card:hover { transform:translateY(-12px); box-shadow:var(--shadow-hover); }
+    .team-img { height:240px; overflow:hidden; position:relative; background:var(--light-bg); }
+    .team-img img { width:100%; height:100%; object-fit:cover; object-position:top; }
+    .team-role-badge {
+      position:absolute; bottom:12px; left:12px;
+      background:var(--yellow); color:var(--navy);
+      font-size:.68rem; font-weight:800; padding:4px 10px;
+      border-radius:999px; text-transform:uppercase; letter-spacing:.06em;
+    }
+    .team-body { padding:20px; }
+    .team-body h4 { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--navy); margin-bottom:4px; }
+    .team-body p { font-size:.82rem; color:var(--mid-gray); line-height:1.55; }
+    @media(max-width:1024px) { .team-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:600px) { .team-grid { grid-template-columns:1fr; } }
+
+    .values-section { background:#fff; }
+    .values-header { text-align:center; max-width:640px; margin:0 auto 56px; }
+    .values-header p { color:var(--mid-gray); margin-top:12px; }
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .val-card {
+      padding:32px 24px; border-radius:20px;
+      background:var(--light-bg); border:1px solid var(--light-border);
+      transition:transform .3s,box-shadow .3s;
+    }
+    .val-card:hover { transform:translateY(-8px); box-shadow:var(--shadow-card); background:#fff; }
+    .val-num { font-family:'Playfair Display',serif; font-size:3rem; font-weight:900; color:rgba(234,195,86,.25); line-height:1; margin-bottom:16px; }
+    .val-card h4 { font-size:1.05rem; font-weight:700; color:var(--navy); margin-bottom:10px; }
+    .val-card p { font-size:.875rem; color:var(--mid-gray); line-height:1.65; }
+    @media(max-width:900px) { .values-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:600px) { .values-grid { grid-template-columns:1fr; } }
+
+    .aerial-cta {
+      position:relative; overflow:hidden; min-height:500px;
+      display:flex; align-items:center;
+    }
+    .aerial-bg {
+      position:absolute; inset:0;
+      background-image:url('about-farm-aerial.jpg');
+      background-size:cover; background-position:center;
+    }
+    .aerial-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(135deg,rgba(10,37,64,.88) 0%,rgba(15,53,87,.72) 60%,rgba(0,0,0,.4) 100%);
+    }
+    .aerial-content {
+      position:relative; z-index:1; padding:80px 24px;
+      max-width:700px; margin:0 auto; text-align:center;
+    }
+    .aerial-content h2 {
+      font-family:'Playfair Display',serif; font-size:clamp(2rem,4.5vw,3.2rem);
+      font-weight:900; color:#fff; margin-bottom:16px; line-height:1.15;
+    }
+    .aerial-content h2 span { color:var(--yellow); }
+    .aerial-content p { font-size:1.05rem; color:rgba(255,255,255,.82); margin-bottom:36px; line-height:1.7; }
+    .aerial-btns { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+
+    footer#footer { background:var(--navy-dark); color:#fff; padding-top:80px; }
+    .footer-main {
+      display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+      gap:40px; padding-bottom:60px;
+    }
+    .footer-tagline { font-size:.85rem; color:rgba(255,255,255,.6); line-height:1.6; margin-bottom:24px; }
+    .social-icons { display:flex; gap:12px; }
+    .social-icon {
+      width:38px; height:38px; border-radius:50%;
+      border:1px solid rgba(255,255,255,.2);
+      display:flex; align-items:center; justify-content:center;
+      cursor:pointer; transition:background var(--transition),border-color var(--transition);
+    }
+    .social-icon:hover { background:var(--yellow); border-color:var(--yellow); }
+    .social-icon:hover svg { stroke:var(--navy); }
+    .social-icon svg { width:16px; height:16px; stroke:rgba(255,255,255,.6); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .footer-col h4 { font-size:.88rem; font-weight:700; color:#fff; margin-bottom:20px; text-transform:uppercase; letter-spacing:.08em; }
+    .footer-col ul { display:flex; flex-direction:column; gap:10px; }
+    .footer-col ul li a { font-size:.84rem; color:rgba(255,255,255,.55); transition:color var(--transition); }
+    .footer-col ul li a:hover { color:var(--yellow); }
+    .fci { display:flex; align-items:flex-start; gap:10px; margin-bottom:12px; }
+    .fci-icon { width:30px; height:30px; border-radius:50%; background:rgba(234,195,86,.15); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+    .fci-icon svg { width:13px; height:13px; stroke:var(--yellow); fill:none; stroke-width:2; stroke-linecap:round; }
+    .fci p { font-size:.82rem; color:rgba(255,255,255,.55); line-height:1.5; }
+    .footer-bar {
+      border-top:1px solid rgba(255,255,255,.08); padding:20px 0;
+      display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    }
+    .footer-bar p { font-size:.8rem; color:rgba(255,255,255,.4); }
+    .footer-bar-links { display:flex; gap:24px; }
+    .footer-bar-links a { font-size:.8rem; color:rgba(255,255,255,.4); transition:color var(--transition); }
+    .footer-bar-links a:hover { color:var(--yellow); }
+
+    @media(max-width:1024px) { .footer-main { grid-template-columns:1fr 1fr; } }
+    @media(max-width:600px) { .footer-main { grid-template-columns:1fr; } }
+  
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: #0F2C59;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.mobile-menu {
+  display: none;
+  background: #ffffff;
+  border-top: 1px solid #eef2f6;
+  padding: 16px 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.mobile-menu:not([hidden]) {
+  display: block !important;
+}
+.mobile-menu a {
+  display: block;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0F2C59;
+  border-bottom: 1px solid #f0f4f8;
+  text-decoration: none;
+}
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+@media (max-width: 992px) {
+  .simple-nav-links { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+
+
+/* ─── COMPREHENSIVE MOBILE & DESKTOP RESPONSIVE SYSTEM ─── */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+img, svg, video, iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .simple-nav-container {
+    padding: 0 16px;
+  }
+  .simple-brand-logo {
+    height: 70px !important;
+    max-height: 70px !important;
+  }
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 16px;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+  .hero-cta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-img-wrap {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 360px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .simple-brand-logo {
+    height: 58px !important;
+    max-height: 58px !important;
+  }
+  .simple-phone-pill span {
+    font-size: 0.82rem;
+  }
+  .simple-phone-pill {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  .simple-phone-icon-bg {
+    width: 26px;
+    height: 26px;
+  }
+  .simple-phone-icon-bg svg {
+    width: 13px;
+    height: 13px;
+  }
+  .hero-heading {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+  }
+  .hero-para {
+    font-size: 0.95rem !important;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-cta {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .mfooter-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .mfooter-bottom-inner {
+    flex-direction: column !important;
+    gap: 12px !important;
+    text-align: center !important;
+  }
+}
+
+
+/* ─── BULLETPROOF MOBILE MENU CSS OVERRIDE ─── */
+.mobile-menu {
+  background: #ffffff !important;
+}
+.mobile-menu.active,
+.mobile-menu:not([hidden]),
+#mobile-menu.active,
+#mobile-menu:not([hidden]) {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 99999 !important;
+  background: #ffffff !important;
+  width: 100% !important;
+  padding: 16px 24px !important;
+  border-top: 1px solid #eef2f6 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+}
+.mobile-menu.active a,
+.mobile-menu:not([hidden]) a,
+#mobile-menu.active a,
+#mobile-menu:not([hidden]) a {
+  display: block !important;
+  padding: 14px 0 !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: #0F2C59 !important;
+  border-bottom: 1px solid #f0f4f8 !important;
+  text-decoration: none !important;
+}
+.mobile-menu.active a:last-child,
+.mobile-menu:not([hidden]) a:last-child {
+  border-bottom: none !important;
+}
+
+</style>
+<style>
+/* ==========================================================================
+   MODERN FOOTER SYSTEM
+   ========================================================================== */
+.modern-footer {
+  background: linear-gradient(180deg, #0A1B30 0%, #050E1A 100%) !important;
+  color: #ffffff !important;
+  padding: 60px 0 30px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-top: 1px solid rgba(234, 195, 86, 0.25) !important;
+}
+.modern-footer::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(234, 195, 86, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer-cta-banner {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+  padding: 36px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 56px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+.fcb-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #EAC356;
+  background: rgba(234, 195, 86, 0.12);
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(234, 195, 86, 0.3);
+}
+.fcb-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.65rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.fcb-content p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  max-width: 620px;
+  margin: 0;
+}
+.fcb-action { flex-shrink: 0; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1.8fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-logo-card {
+  display: inline-block;
+  background: #ffffff;
+  padding: 12px 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  margin-bottom: 20px;
+}
+.footer-logo-card img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.footer-tagline {
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  margin-bottom: 24px !important;
+  max-width: 380px !important;
+}
+
+.social-pills {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.social-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #ffffff !important;
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-pill-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: #EAC356;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.3s ease;
+}
+.social-pill-btn:hover {
+  background: #EAC356;
+  color: #0A1B30 !important;
+  border-color: #EAC356;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(234, 195, 86, 0.3);
+}
+.social-pill-btn:hover svg {
+  stroke: #0A1B30;
+}
+
+.footer-col-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.18rem;
+  color: #ffffff;
+  margin-bottom: 22px;
+  position: relative;
+  display: inline-block;
+}
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background: #EAC356;
+  border-radius: 2px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-links-list a {
+  color: rgba(255,255,255,0.72) !important;
+  text-decoration: none;
+  font-size: 0.93rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-links-list a:hover {
+  color: #EAC356 !important;
+  transform: translateX(4px);
+}
+
+.modern-contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mcc-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 12px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.mcc-item:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(234, 195, 86, 0.4);
+  transform: translateX(4px);
+}
+.mcc-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(234, 195, 86, 0.12);
+  border: 1px solid rgba(234, 195, 86, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mcc-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #EAC356;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mcc-info {
+  display: flex;
+  flex-direction: column;
+}
+.mcc-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(255,255,255,0.5);
+}
+.mcc-info strong {
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-bottom-bar p {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.86rem;
+  margin: 0;
+}
+.footer-meta {
+  color: rgba(234, 195, 86, 0.85);
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .footer-cta-banner { flex-direction: column; text-align: center; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+</style>
+<style>
+/* ==========================================================================
+   MODERN HEADER & UTILITY BAR SYSTEM
+   ========================================================================== */
+.top-utility-bar {
+  background: #050E1A !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 0.78rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 6px 0 !important;
+  position: relative !important;
+  z-index: 1001 !important;
+}
+.tub-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+}
+.tub-left, .tub-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+.tub-sep {
+  color: rgba(234, 195, 86, 0.5) !important;
+}
+.tub-socials {
+  display: flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+}
+.tub-socials a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.25s ease !important;
+}
+.tub-socials a svg {
+  width: 12px !important;
+  height: 12px !important;
+  stroke: #EAC356 !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+}
+.tub-socials a:hover {
+  background: #EAC356 !important;
+}
+.tub-socials a:hover svg {
+  stroke: #0A1B30 !important;
+}
+
+.modern-navbar {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  background: rgba(10, 27, 48, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(234, 195, 86, 0.25) !important;
+  padding: 10px 0 !important;
+  transition: all 0.35s ease !important;
+}
+.modern-navbar.scrolled {
+  background: rgba(5, 14, 26, 0.98) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  padding: 6px 0 !important;
+}
+.modern-navbar .nav-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+}
+
+.nav-logo-box {
+  background: #ffffff !important;
+  padding: 6px 16px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  transition: transform 0.25s ease !important;
+}
+.nav-logo-box:hover {
+  transform: scale(1.03) !important;
+}
+.nav-logo-box img {
+  height: 48px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.modern-navbar .nav-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.modern-navbar .nav-item-link {
+  color: rgba(255, 255, 255, 0.88) !important;
+  text-decoration: none !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  padding: 8px 18px !important;
+  border-radius: 50px !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid transparent !important;
+}
+.modern-navbar .nav-item-link:hover {
+  color: #EAC356 !important;
+  background: rgba(234, 195, 86, 0.12) !important;
+  border-color: rgba(234, 195, 86, 0.3) !important;
+}
+.modern-navbar .nav-item-link.active {
+  color: #EAC356 !important;
+  background: rgba(234, 195, 86, 0.18) !important;
+  border-color: rgba(234, 195, 86, 0.45) !important;
+  box-shadow: 0 4px 14px rgba(234, 195, 86, 0.2) !important;
+}
+
+.nav-right-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+.modern-navbar .nav-phone-chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+  padding: 6px 16px 6px 8px !important;
+  border-radius: 50px !important;
+  text-decoration: none !important;
+  font-size: 0.86rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+.modern-navbar .nav-phone-chip:hover {
+  border-color: #EAC356 !important;
+  background: rgba(234, 195, 86, 0.12) !important;
+  color: #EAC356 !important;
+}
+.phone-pulse-icon {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  background: #EAC356 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: pulse-ring 2s infinite !important;
+}
+.phone-pulse-icon svg {
+  width: 14px !important;
+  height: 14px !important;
+  stroke: #0A1B30 !important;
+  fill: none !important;
+  stroke-width: 2.2 !important;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(234, 195, 86, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(234, 195, 86, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(234, 195, 86, 0); }
+}
+
+@media (max-width: 992px) {
+  .top-utility-bar { display: none !important; }
+  .modern-navbar .nav-links { display: none !important; }
+  .nav-cta-btn { display: none !important; }
+}
+</style>
+<style>
+/* ==========================================================================
+   SIMPLE HEADER NAVBAR (MATCHING SCREENSHOT)
+   ========================================================================== */
+.simple-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #ffffff !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #eef2f6;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.simple-nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simple-nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.simple-brand-logo {
+  height: 95px;
+  max-height: 95px;
+  width: auto;
+  max-width: 280px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.simple-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.simple-nav-links li a {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0F2C59;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.simple-nav-links li a:hover,
+.simple-nav-links li a.active {
+  color: #0F2C59;
+}
+
+.simple-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.simple-phone-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0F2C59;
+  color: #ffffff !important;
+  padding: 7px 20px 7px 7px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  box-shadow: 0 4px 15px rgba(15, 44, 89, 0.25);
+  transition: all 0.3s ease;
+}
+
+.simple-phone-pill:hover {
+  background: #0A1B30;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(15, 44, 89, 0.35);
+}
+
+.simple-phone-icon-bg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #EAC356;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.simple-phone-icon-bg svg {
+  width: 16px;
+  height: 16px;
+  fill: #0F2C59;
+}
+
+@media (max-width: 992px) {
+  .simple-nav-links { display: none !important; }
+}
+</style>
+</head>
+<body>
+
+  <!-- ② NAVBAR -->
+    
+  </div>
+
+  <!-- MODERN NAVBAR -->
+    <!-- SIMPLE HEADER NAVBAR -->
+  <nav id="navbar" class="simple-navbar" role="navigation" aria-label="Main navigation">
+    <div class="simple-nav-container">
+      <a href="index.html" class="simple-nav-logo">
+        <img src="logo.png" alt="Rothes A Dairy Farm" class="simple-brand-logo" />
+      </a>
+
+      <ul class="simple-nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#whatwedo">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="simple-nav-right">
+        <a href="tel:051-2222440" class="simple-phone-pill">
+          <div class="simple-phone-icon-bg">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.28 11.8 19.79 19.79 0 01.22 3.17 2 2 0 012.22 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91A16 16 0 0015.1 17.9l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <span>051-2222440</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#whatwedo">Services</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- ③ HERO -->
+  <section class="about-hero">
+    <div class="hero-inner-about">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span>About Us</span>
+        </div>
+        <span class="eyebrow">Who We Are</span>
+        <h1>A Family Farm Built on <span>Passion &amp; Purity</span></h1>
+        <p class="lead">Since 2003, Rothes (a) Dairy Farm has been the heart of dairy excellence — blending generations of farming wisdom with modern ethical practices to bring pure, honest milk to your table every morning.</p>
+        <div class="hero-chips">
+          <div class="hero-chip">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Family-Owned Since 2003
+          </div>
+          <div class="hero-chip">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            100% Organic &amp; Ethical
+          </div>
+          <div class="hero-chip">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            10,000+ Happy Families
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="products.html" class="btn btn-yellow">Explore Our Products →</a>
+          <a href="contact.html" class="btn btn-outline-white">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-collage reveal-right">
+        <div class="hc-main">
+          <img src="founder-angamuthu.jpg" alt="Mr. A. Angamuthu - Founder of Rothes (A) Dairy Farm" style="object-position:top;" />
+        </div>
+        <div class="hc-secondary">
+          <img src="cows-1.jpg" alt="Pasture cows at Rothes Farm Hatton" />
+        </div>
+        <div class="hc-badge">
+          <div class="hc-years-badge">
+            <span class="num">23+</span>
+            <span class="label">Years of<br/>Excellence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ CERTIFICATIONS BAND -->
+  <div class="cert-band">
+    <div class="container">
+      <div class="cert-inner">
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>100% Organic Certified</span>
+        </div>
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Farm-to-Door in 6 Hours</span>
+        </div>
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Fonterra Approved Supplier</span>
+        </div>
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span>Ethical Animal Welfare</span>
+        </div>
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>4.9★ Customer Rating</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑤ STATS STRIP -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-num-big" data-target="240">0</span>
+          <div class="stat-label">Cows on the Farm</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num-big" data-target="10000" data-suffix="+">0</span>
+          <div class="stat-label">Families Served</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num-big" data-target="23" data-suffix=" Yrs">0</span>
+          <div class="stat-label">Years in Business</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num-big" data-target="3000" data-suffix="L+">0</span>
+          <div class="stat-label">Daily Milk Output</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑥ OUR STORY -->
+  <section class="story-section section-pad">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-images reveal-left">
+          <div class="si-main">
+            <img src="cows-1.jpg" alt="Rothes farm cows in green pastures" />
+          </div>
+          <div class="si-secondary">
+            <img src="cows-2.jpg" alt="Highland pastures at Rothes Dairy Farm" />
+          </div>
+          <div class="si-seal float-anim">
+            <div class="seal lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--navy)" style="margin-bottom:4px"><path d="M12 2l2.09 6.26L21 9l-5.45 4.87L17.18 21 12 17.27 6.82 21l1.63-7.13L3 9l6.91-.74L12 2z"/></svg>
+              <strong>Family<br/>Farm</strong>
+              Est. 2003
+            </div>
+          </div>
+        </div>
+
+        <div class="story-content reveal-right">
+          <span class="eyebrow">Our Story</span>
+          <h2 class="section-heading">From a Small Herd to<br/>Sri Lanka's Finest Dairy</h2>
+          <p class="intro-quote">"Dairy farming was always in my blood — founding Rothes Farm in Hatton was the fulfillment of a lifelong dream."</p>
+          <p>Dairy farming was a cherished family occupation since childhood for our founder, <strong>Mr. A. Angamuthu</strong>. After establishing a successful career as a wholesale egg trader in Pettah, Colombo, he pursued his lifelong dream in <strong>2003</strong> by purchasing 12 acres of land known as "Rothes 'A'" in Hatton, Sri Lanka, to found Rothes (A) Dairy Farm.</p>
+          <p>Over two decades of dedication, we have grown into a 240-cow operation producing over 3,000 litres of fresh milk daily. Recognized as a pioneer supplier to Fonterra Brands Lanka (Pvt) Ltd, Rothes (A) Dairy Farm has expanded to produce premium Cow Ghee, Mozzarella Cheese, Artisanal Paneer, Cattle Feed, and Dewatered Cow Dung Organic Manure.</p>
+          <div class="story-features">
+            <div class="sf-item">
+              <div class="ic sm">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <strong>Family-Owned &amp; Operated</strong>
+                <span>Three generations, one unwavering commitment to pure dairy.</span>
+              </div>
+            </div>
+            <div class="sf-item">
+              <div class="ic sm">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <strong>Quality Without Compromise</strong>
+                <span>4.5% FAT, 8.8% SNF — naturally, not chemically enhanced.</span>
+              </div>
+            </div>
+            <div class="sf-item">
+              <div class="ic sm">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <div>
+                <strong>Community-Centered</strong>
+                <span>Supporting 165+ local households across the region.</span>
+              </div>
+            </div>
+          </div>
+          <a href="products.html" class="btn btn-yellow">See Our Products →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑦ MISSION, VISION & VALUES -->
+  <section class="mvv-section section-pad">
+    <div class="container">
+      <div class="mvv-header reveal">
+        <span class="eyebrow">Our Foundation</span>
+        <h2 class="section-heading light">Mission, Vision<br/>&amp; Core Values</h2>
+        <p>Everything we do is guided by a deep respect for nature, our animals, and the families we serve every single day.</p>
+      </div>
+      <div class="mvv-grid">
+        <div class="mvv-card reveal">
+          <div class="mvv-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To deliver 100% pure, naturally sourced dairy products directly from our farm to every family's table — with complete transparency, ethical practices, and unmatched freshness in every drop.</p>
+          <span class="mvv-tag">Pure &amp; Transparent</span>
+        </div>
+        <div class="mvv-card reveal">
+          <div class="mvv-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <h3>Our Vision</h3>
+          <p>To become South Asia's most trusted farm-to-table dairy brand — setting new standards for quality, sustainability, and animal welfare while empowering rural farming communities.</p>
+          <span class="mvv-tag">Sustainable Future</span>
+        </div>
+        <div class="mvv-card reveal">
+          <div class="mvv-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Our Values</h3>
+          <p>Integrity in every process. Compassion for every animal. Respect for every customer. These aren't just words — they're the principles that govern every decision we make.</p>
+          <span class="mvv-tag">Integrity First</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑧ MILESTONES TIMELINE -->
+  <section class="timeline-section section-pad">
+    <div class="container">
+      <div class="timeline-header reveal">
+        <span class="eyebrow">Our Journey</span>
+        <h2 class="section-heading">Two Decades of<br/>Dairy Excellence</h2>
+        <p>Every milestone tells the story of our relentless pursuit of quality, growth, and community impact.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal-left"><div class="tl-dot"></div><h4>The Founding Dream</h4><p>Mr. A. Angamuthu acquired 12 acres ("Rothes 'A'") in Hatton, turning a cherished family passion for dairy into Rothes (A) Dairy Farm.</p></div>
+        <div class="tl-item reveal-right"><div class="tl-dot"></div><h4>Fonterra Partnership</h4><p>Became a pioneer fresh milk supplier to Fonterra Brands Lanka (Pvt) Ltd — a landmark quality recognition.</p></div>
+        <div class="tl-item reveal-left"><div class="tl-dot"></div><h4>Jersey Breed Expansion</h4><p>Introduced premium Jersey cattle to our herd, boosting milk fat content and overall quality significantly.</p></div>
+        <div class="tl-item reveal-right"><div class="tl-dot"></div><h4>Artisan Dairy Launch</h4><p>Launched Mozzarella Cheese and Paneer production using traditional methods and 100% fresh farm milk.</p></div>
+        <div class="tl-item reveal-left"><div class="tl-dot"></div><h4>Pure Cow Ghee</h4><p>Introduced Rothes Pure Cow Ghee (Elagi Thel), crafted using holistic traditional churning methods.</p></div>
+        <div class="tl-item reveal-right"><div class="tl-dot"></div><h4>3,000L Daily Milestone</h4><p>Surpassed 3,000 litres of daily fresh milk production with 240+ cows, serving 10,000+ families.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑩ VALUES GRID -->
+  <section class="values-section section-pad">
+    <div class="container">
+      <div class="values-header reveal">
+        <span class="eyebrow">What We Stand For</span>
+        <h2 class="section-heading">Six Commitments That<br/>Define Everything We Do</h2>
+        <p>These core commitments are the living principles behind every bottle of milk we deliver.</p>
+      </div>
+      <div class="values-grid">
+        <div class="val-card reveal"><div class="val-num">01</div><h4>Absolute Purity</h4><p>No additives, no preservatives, no shortcuts. Every product leaves our farm exactly as nature intended.</p></div>
+        <div class="val-card reveal"><div class="val-num">02</div><h4>Ethical Animal Care</h4><p>Our 240+ cows are pasture-raised, fed organic diets, and never treated with growth hormones.</p></div>
+        <div class="val-card reveal"><div class="val-num">03</div><h4>Same-Day Freshness</h4><p>Harvested at dawn, delivered by noon. Milk reaches your family within 6 hours of collection.</p></div>
+        <div class="val-card reveal"><div class="val-num">04</div><h4>Community Impact</h4><p>We employ local farming families and reinvest in the communities that make our work possible.</p></div>
+        <div class="val-card reveal"><div class="val-num">05</div><h4>Environmental Stewardship</h4><p>From organic manure recycling to sustainable feed farming, we minimize our carbon footprint.</p></div>
+        <div class="val-card reveal"><div class="val-num">06</div><h4>Customer Trust</h4><p>Every family we serve is a relationship built on trust. We're transparent about our processes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑪ AERIAL CTA -->
+  <div class="aerial-cta">
+    <div class="aerial-bg" aria-hidden="true"></div>
+    <div class="aerial-overlay" aria-hidden="true"></div>
+    <div class="aerial-content reveal">
+      <span class="eyebrow" style="color:var(--yellow);justify-content:center">Visit Our Farm</span>
+      <h2>Come Experience <span>Pure Dairy</span> at the Source</h2>
+      <p>Open for farm visits every weekend. Walk our pastures, meet our cows, and taste the difference 23 years of passion produces.</p>
+      <div class="aerial-btns">
+        <a href="contact.html" class="btn btn-yellow">Book a Farm Visit →</a>
+        <a href="products.html" class="btn btn-outline-white">Shop Our Products</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑫ FOOTER -->
+    <!-- MODERN FOOTER -->
+  <footer id="footer" class="modern-footer">
+    <div class="container">
+      
+
+      <!-- Main Footer Columns Grid -->
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-card">
+            <img src="logo.png" alt="Rothes A Dairy Farm Logo" />
+          </div>
+          <p class="footer-tagline">Delivering nature's finest milk from our family farm to your table — fresh, pure, and full of goodness. Trusted by families since 2003.</p>
+          <div class="social-pills">
+            <a href="https://web.facebook.com/RothesAdairyFarm?_rdc=1&_rdr#" target="_blank" rel="noopener" class="social-pill-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/rothesadairy" target="_blank" rel="noopener" class="social-pill-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="about.html"><span>About Us</span></a></li>
+            <li><a href="products.html"><span>Our Products</span></a></li>
+            <li><a href="index.html#whatwedo"><span>Services</span></a></li>
+            <li><a href="contact.html"><span>Contact Us</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Column -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Get in Touch</h4>
+          <div class="modern-contact-cards">
+            <a href="tel:051-2222440" class="mcc-item">
+              <div class="mcc-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.28 11.8 19.79 19.79 0 01.22 3.17 2 2 0 012.22 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91A16 16 0 0015.1 17.9l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="mcc-info">
+                <span class="mcc-label">Call Us</span>
+                <strong>051-2222440</strong>
+              </div>
+            </a>
+
+            <a href="mailto:itzmeindujan@gmail.com" class="mcc-item">
+              <div class="mcc-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="mcc-info">
+                <span class="mcc-label">Email Us</span>
+                <strong>itzmeindujan@gmail.com</strong>
+              </div>
+            </a>
+
+            <div class="mcc-item">
+              <div class="mcc-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="mcc-info">
+                <span class="mcc-label">Location</span>
+                <strong>Rothes (A) Estate, Hatton, Sri Lanka</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <p>© 2026 Rothes (A) Dairy Farm. All rights reserved.</p>
+        <div class="footer-meta">
+          <span>Crafted with Pure Passion in Hatton</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    /* ─── UNIFIED MOBILE MENU & NAVBAR HANDLER ───────────── */
+    (function() {
+      const navbar = document.getElementById('navbar');
+      if (navbar) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 40) navbar.classList.add('scrolled');
+          else navbar.classList.remove('scrolled');
+        }, { passive: true });
+      }
+
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isOpen = mobileMenu.classList.contains('active') || mobileMenu.style.display === 'block';
+          if (isOpen) {
+            mobileMenu.classList.remove('active');
+            mobileMenu.style.setProperty('display', 'none', 'important');
+            mobileMenu.hidden = true;
+            hamburger.setAttribute('aria-expanded', 'false');
+          } else {
+            mobileMenu.classList.add('active');
+            mobileMenu.style.setProperty('display', 'block', 'important');
+            mobileMenu.hidden = false;
+            hamburger.setAttribute('aria-expanded', 'true');
+          }
+          const spans = hamburger.querySelectorAll('span');
+          if (spans.length >= 3) {
+            if (!isOpen) {
+              spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+              spans[1].style.opacity = '0';
+              spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+            } else {
+              spans[0].style.transform = '';
+              spans[1].style.opacity = '';
+              spans[2].style.transform = '';
+            }
+          }
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(function(a) {
+          a.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            mobileMenu.style.setProperty('display', 'none', 'important');
+            mobileMenu.hidden = true;
+            hamburger.setAttribute('aria-expanded', 'false');
+            const spans = hamburger.querySelectorAll('span');
+            if (spans.length >= 3) {
+              spans[0].style.transform = '';
+              spans[1].style.opacity = '';
+              spans[2].style.transform = '';
+            }
+          });
+        });
+      }
+    })();
+
+
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+    function animateCounter(el, target, suffix) {
+      let start = 0; const duration = 1800, step = 16;
+      const increment = target / (duration / step);
+      const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) { start = target; clearInterval(timer); }
+        el.textContent = Math.floor(start) + suffix;
+      }, step);
+    }
+    const statNums = document.querySelectorAll('.stat-num-big');
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          animateCounter(el, parseFloat(el.dataset.target), el.dataset.suffix || '');
+          counterObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    statNums.forEach(el => counterObs.observe(el));
+  
+</script>
+</body>
+</html>
